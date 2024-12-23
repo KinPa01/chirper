@@ -11,11 +11,11 @@ dayjs.extend(relativeTime);
 export default function Chirp({ chirp }) {
     const { auth } = usePage().props;
 
-    const [editing, setEditing] = useState(false);
+    const [editing, setEditing] = useState(false);//ฟังชั่นในการใช้งานแก้ไข
 
     const { data, setData, patch, clearErrors, reset, errors } = useForm({
         message: chirp.message,
-    });
+    });//กำหนดฟังข้อมูล
 
     const submit = (e) => {
         e.preventDefault();

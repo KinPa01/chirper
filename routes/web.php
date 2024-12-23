@@ -5,6 +5,25 @@ use App\Http\Controllers\ChirpController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
+
+
+
+Route::get('/greeting', function () {
+    return 'Hello World';
+}); //return ค่าคงที่ #2 returnค่าออกมาเป็น hello ถ้าพิม /greeting  ใช้ postmanได้ (post)(error)
+Route::get('/user', [UserController::class, 'index']);  //กำหนดเวลา/user ทำงานที่ index ในเว็ป
+
+Route::get('/user/{id}', function (string $id) {
+    return 'User '.$id;
+});//เวลาแสงuser ตามด้วย id ในเว็ป
+Route::get('/users/{user}', [UserController::class, 'show']);
+
+
+Route::get('/products', [ProductController::class, 'index']); //เพิ่มมา
+Route::get('/products/{id}', [ProductController::class, 'show']); // /products ตามด้วย id ในเว็ป จะขึ้นเลขidสินค่า
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [

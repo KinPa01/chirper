@@ -16,10 +16,11 @@ class ChirpController extends Controller
      */
     public function index(): Response
     {
-        return Inertia::render('Chirps/Index', [
-            'chirps' => Chirp::with('user:id,name')->latest()->get(),
+        return Inertia::render('Chirps/Index', [ //r index ไป props
+            'chirps' => Chirp::with('user:id,name')->latest()->get(),  //คำสั่งนี้ดึงข้อมูล Chirp เลือกid name จัด
         ]);
-    }
+
+    }//เพื่อ แสดงในchirps
 
     /**
      * Show the form for creating a new resource.
@@ -35,7 +36,7 @@ class ChirpController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $validated = $request->validate([
-            'message' => 'required|string|max:255',
+            'message' => 'required|string|max:255', //ตัวบอกว่าสามารถเขียนได้กี่ตัวอักษร
         ]);
 
         $request->user()->chirps()->create($validated);
