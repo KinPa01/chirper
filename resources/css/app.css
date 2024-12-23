@@ -90,4 +90,70 @@ body {
 .back-link:hover {
     background-color: #222;
 }
+/* Container styling */
+.product-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Image styling */
+  .product-detail-image {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover; /* ทำให้ภาพครอบคลุมพื้นที่ */
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Name styling */
+  .product-detail-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    font-family: "Playfair Display", serif; /* ตัวอักษรหรู */
+    margin-bottom: 10px;
+  }
+
+  /* Description styling */
+  .product-detail-description {
+    font-size: 1.2rem;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  /* Price styling */
+  .product-detail-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007BFF;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
+  }
+
+  /* Back link styling */
+  .back-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-link:hover {
+    background-color: #0056b3;
+  }
+
 
