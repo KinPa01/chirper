@@ -21,7 +21,7 @@ Route::get('/user/{id}', function (string $id) {
 Route::get('/users/{user}', [UserController::class, 'show']);
 
 
-Route::get('/products', [ProductController::class, 'index']); //เพิ่มมา
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');//เพิ่มมา
 Route::get('/products/{id}', [ProductController::class, 'show']); // /products ตามด้วย id ในเว็ป จะขึ้นเลขidสินค่า
 
 
