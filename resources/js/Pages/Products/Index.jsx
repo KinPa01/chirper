@@ -20,12 +20,12 @@ export default function Index({ auth, products }) {
                                 className="w-full h-40 object-cover rounded-md"
                             />
                             <h2 className="mt-4 text-lg font-semibold">{product.name}</h2>
-                            <p className="text-gray-500 mt-2">${product.price}</p>
+                            <p className="text-gray-500 mt-2">฿{product.price}</p>
                             <Link
                                 href={`/products/${product.id}`}
                                 className="mt-4 inline-block text-indigo-500 hover:text-indigo-700"
                             >
-                                View Details
+                                ดูรายละเอียด
                             </Link>
                         </div>
                     ))}

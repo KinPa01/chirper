@@ -6,9 +6,9 @@ export default function Show({ product }) {
             <img src={product.image} alt={product.name} className="product-detail-image" />
             <h1 className="product-detail-name">{product.name}</h1>
             <p className="product-detail-description">{product.description}</p>
-            <p className="product-detail-price">Price: ${product.price}</p>
+            <p className="product-detail-price">Price: ฿{product.price}</p>
             <Link href="/products" className="back-link">
-                Back to All Products
+                ย้อนกลับ
             </Link>
         </div>
     );
