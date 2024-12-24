@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     private $products = [
-        ['id' => 1, 'name' => 'แล็ปท็อป', 'description' => 'แล็ปท็อปประสิทธิภาพสูง', 'price' => 46000, 'image' => '/images/laptop.png'],
-        ['id' => 2, 'name' => 'สมาร์ทโฟน', 'description' => 'สมาร์ทโฟนรุ่นล่าสุดพร้อมฟีเจอร์เด็ด', 'price' => 30000, 'image' => '/images/smartphone.png'],
+        ['id' => 1, 'name' => 'แล็ปท็อป', 'description' => 'โน้ตบุ๊ก SURFACE Laptop Go3-XK1-00047/i5-1235U/8GB/256GB Notebook', 'price' => 46000, 'image' => '/images/laptop.png'],
+        ['id' => 2, 'name' => 'สมาร์ทโฟน', 'description' => 'VERTU® IRONFLIP Carbon Texture SERIES – AUSPICIOUS PHOENIX', 'price' => 30000, 'image' => '/images/smartphone.png'],
         ['id' => 3, 'name' => 'แท็บเล็ต', 'description' => 'แท็บเล็ตพกพาสำหรับใช้ในชีวิตประจำวัน', 'price' => 15000, 'image' => '/images/tablet.jpg'],
         ['id' => 4, 'name' => 'Gaming Mouse', 'description' => 'เมาส์เล่นเกมที่ยิงคมหัวตึงๆ', 'price' => 2230, 'image' => '/images/mouse.jpg'],
         ['id' => 5, 'name' => 'Mechanical Keyboard', 'description' => 'คีย์บอร์ดทนทานต่อหินและตอบสนองได้ดี', 'price' => 3029, 'image' => '/images/keyboard.jpeg'],
